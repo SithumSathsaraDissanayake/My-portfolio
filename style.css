@@ -172,6 +172,20 @@ a { color: inherit; text-decoration: none; }
   position: relative;
   display: inline-block;
   margin-bottom: 30px;
+  width: 130px;
+  height: 130px;
+}
+
+.avatar-glow::before {
+  content: '';
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, #3b82f6, #8b5cf6, #06b6d4, #3b82f6);
+  z-index: 1;
+  animation: rotateGlow 6s linear infinite;
+  filter: blur(6px);
+  opacity: 0.6;
 }
 
 .avatar {
@@ -193,16 +207,19 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: -1px;
 }
 .avatar-img {
-  width: 120px;
-  height: 120px;
+  width: 130px !important;
+  height: 130px !important;
+  max-width: 130px !important;
+  max-height: 130px !important;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center;
+  object-position: center top;
   position: relative;
   z-index: 2;
-  border: 3px solid rgba(59, 130, 246, 0.5);
+  border: 3px solid rgba(59, 130, 246, 0.6);
   animation: avatarPulse 3s ease-in-out infinite;
   display: block;
+  box-shadow: 0 0 30px rgba(59, 130, 246, 0.5);
 }
 
 @keyframes avatarPulse {
