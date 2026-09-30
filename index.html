@@ -4,85 +4,233 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sithum Sathsara Dissanayake | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- HERO -->
-  <header class="hero">
-    <div class="avatar">SS</div>
-    <h1>Sithum Sathsara Dissanayake</h1>
-    <p class="tagline">HNDIT Undergraduate @ SLIATE | Aspiring IT Professional</p>
-    <div class="links">
-      <a href="https://github.com/SithumSathsaraDissanayake" target="_blank">GitHub</a>
-      <a href="mailto:yourmail@gmail.com">Email</a>
-      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Sithum<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
     </div>
-  </header>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <div class="avatar-glow">
+        <div class="avatar">SS</div>
+      </div>
+      <h1>Hi, I'm <span class="gradient-text">Sithum Sathsara</span></h1>
+      <p class="tagline">HNDIT Undergraduate @ SLIATE · Aspiring IT Professional</p>
+      <p class="hero-desc">Passionate about web development & software engineering. Building practical solutions and continuously improving my skills.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+        <a href="https://github.com/SithumSathsaraDissanayake" target="_blank" class="btn btn-outline">View GitHub</a>
+      </div>
+      <div class="social-links">
+        <a href="https://github.com/SithumSathsaraDissanayake" target="_blank" title="GitHub">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.5 11.5 0 016 0c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+        </a>
+        <a href="mailto:yourmail@gmail.com" title="Email">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+  </section>
 
   <!-- ABOUT -->
-  <section>
-    <h2>About Me</h2>
-    <p>
-      I'm an HNDIT undergraduate at SLIATE with a strong passion for web development 
-      and software engineering. I enjoy building practical solutions and continuously 
-      improving my technical skills. Currently seeking an IT role where I can contribute 
-      and grow professionally.
-    </p>
+  <section class="section reveal" id="about">
+    <div class="container">
+      <h2 class="section-title"><span class="num">01.</span> About Me</h2>
+      <div class="about-content">
+        <p>I'm an <strong>HNDIT undergraduate at SLIATE</strong> with a strong passion for web development and software engineering. I enjoy building practical solutions and continuously improving my technical skills.</p>
+        <p>Currently seeking an <strong>IT role</strong> where I can contribute, learn, and grow professionally while delivering quality work.</p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">10+</span>
+            <span class="stat-label">Technologies</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">1+</span>
+            <span class="stat-label">Live Project</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- EDUCATION -->
-  <section>
-    <h2>Education</h2>
-    <div class="card">
-      <h3>Higher National Diploma in Information Technology (HNDIT)</h3>
-      <p>SLIATE — Undergraduate</p>
+  <section class="section reveal" id="education">
+    <div class="container">
+      <h2 class="section-title"><span class="num">02.</span> Education</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <h3>Higher National Diploma in Information Technology (HNDIT)</h3>
+            <p class="timeline-sub">SLIATE — Undergraduate</p>
+            <p class="timeline-desc">Currently pursuing HNDIT with focus on programming, web development, database management, and software engineering fundamentals.</p>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- SKILLS -->
-  <section>
-    <h2>Skills</h2>
-    <div class="skills">
-      <span>HTML</span>
-      <span>CSS</span>
-      <span>JavaScript</span>
-      <span>Java</span>
-      <span>PHP</span>
-      <span>MySQL</span>
-      <span>React.js (Basic)</span>
-      <span>VS Code</span>
-      <span>GitHub</span>
-      <span>XAMPP</span>
-      <span>phpMyAdmin</span>
-      <span>Database Management</span>
-      <span>Web Development</span>
+  <section class="section reveal" id="skills">
+    <div class="container">
+      <h2 class="section-title"><span class="num">03.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <div class="skills">
+            <span class="skill-tag">HTML</span>
+            <span class="skill-tag">CSS</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">PHP</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks & Databases</h3>
+          <div class="skills">
+            <span class="skill-tag">React.js (Basic)</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">phpMyAdmin</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3>Tools & Others</h3>
+          <div class="skills">
+            <span class="skill-tag">VS Code</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">XAMPP</span>
+            <span class="skill-tag">Database Management</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section>
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Career Guidance and Skill Development Web System <span class="badge">Ongoing</span></h3>
-      <p>
-        A web-based platform designed to help students explore career paths 
-        and develop relevant skills through structured guidance and resources.
-      </p>
-      <p class="tech">Tech: HTML, CSS, JavaScript, PHP, MySQL</p>
+  <section class="section reveal" id="projects">
+    <div class="container">
+      <h2 class="section-title"><span class="num">04.</span> Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-header">
+            <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+            <span class="badge">Ongoing</span>
+          </div>
+          <h3>Career Guidance & Skill Development System</h3>
+          <p>A web-based platform designed to help students explore career paths and develop relevant skills through structured guidance and resources.</p>
+          <div class="project-tech">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+          </div>
+        </div>
+        <div class="project-card coming-soon">
+          <div class="project-header">
+            <svg class="folder-icon" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 19a2 2 0 01-2 2H4a2 2 0 01-2-2V5a2 2 0 012-2h5l2 3h9a2 2 0 012 2z"/></svg>
+          </div>
+          <h3>More Projects Coming Soon</h3>
+          <p>Currently working on new projects to expand my portfolio. Stay tuned!</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- CONTACT -->
-  <section>
-    <h2>Contact</h2>
-    <p>📧 yourmail@gmail.com</p>
-    <p>💻 <a href="https://github.com/SithumSathsaraDissanayake">github.com/SithumSathsaraDissanayake</a></p>
+  <section class="section reveal" id="contact">
+    <div class="container contact-container">
+      <h2 class="section-title center"><span class="num">05.</span> Get In Touch</h2>
+      <p class="contact-desc">I'm currently looking for opportunities in IT. Whether you have a question or just want to say hi, my inbox is always open!</p>
+      <a href="mailto:yourmail@gmail.com" class="btn btn-primary btn-large">Say Hello 👋</a>
+      <div class="contact-links">
+        <a href="https://github.com/SithumSathsaraDissanayake" target="_blank">GitHub</a>
+        <span>·</span>
+        <a href="mailto:yourmail@gmail.com">Email</a>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>© 2025 Sithum Sathsara Dissanayake</p>
+    <p>Designed & Built by <span class="gradient-text">Sithum Sathsara Dissanayake</span></p>
+    <p class="footer-small">© 2025 · Made with ❤️ using HTML, CSS & JavaScript</p>
   </footer>
+
+  <script>
+    // Sticky navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) navbar.classList.add('scrolled');
+      else navbar.classList.remove('scrolled');
+    });
+
+    // Mobile menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close mobile menu when link clicked
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Active nav link on scroll
+    const sections = document.querySelectorAll('section[id]');
+    const navItems = document.querySelectorAll('.nav-link');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (window.scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+      navItems.forEach(item => {
+        item.classList.remove('active');
+        if (item.getAttribute('href') === '#' + current) item.classList.add('active');
+      });
+    });
+
+    // Scroll reveal animation
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
 
 </body>
 </html>
